@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1220.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.todolistjavafx.controllers.NotebookController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="88.0" prefWidth="1220.0" spacing="35.0" style="-fx-border-color: slategray;">
+         <children>
+            <Button fx:id="buttonAdd" alignment="CENTER" mnemonicParsing="false" onAction="#btnActionAdd" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: slategray;" text="Добавить" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonChange" alignment="CENTER" mnemonicParsing="false" onAction="#btnActionChange" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: slategray;" text="Изменить" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonDelete" alignment="CENTER" mnemonicParsing="false" onAction="#btnActionDelete" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: slategray;" text="Удалить" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <effect>
+            <Blend />
+         </effect>
+      </HBox>
+      <Pane prefHeight="58.0" prefWidth="1220.0">
+         <children>
+            <TextField layoutX="381.0" layoutY="7.0" prefHeight="26.0" prefWidth="461.0" />
+            <Button fx:id="buttonSearch" layoutX="864.0" layoutY="7.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" text="Поиск" />
+         </children>
+      </Pane>
+      <TableView fx:id="nbTableView" nodeOrientation="LEFT_TO_RIGHT" prefHeight="467.0" prefWidth="1220.0">
+         <columns>
+            <TableColumn fx:id="tblColumnName" maxWidth="1000.0" minWidth="5.0" prefWidth="219.69089287519455" text="Контакт" />
+            <TableColumn fx:id="tblColumnNumber" maxWidth="1000.0" prefWidth="593.6909027099609" text="Номер" />
+            <TableColumn fx:id="tblColumnNote" prefWidth="481.69091796875" text="Примечание" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox prefHeight="63.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="labelCount" prefHeight="17.0" prefWidth="163.0" text="Количество контактов: ">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</VBox>
