@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import lombok.Getter;
 import org.example.todolistjavafx.NotebookApplication;
 import org.example.todolistjavafx.model.Person;
 import org.example.todolistjavafx.model.db.NotebookHandler;
@@ -48,59 +49,61 @@ public class NotebookController implements Initializable {
     @FXML
     Label labelCount;
 
-    @FXML
-    TextField textFieldChangeName;
-
-    @FXML
-    TextField textFieldChangeNumber;
-
-    @FXML
-    TextArea textFieldChangeNote;
-
-    @FXML
-    Button buttonChangeOk;
-
-    @FXML
-    Button buttonChangeChanel;
-
-
-
-
+    @Getter
+    ChangeController children;
 
     @FXML
     private void btnActionAdd(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NotebookApplication.class.getResource("viewEdit.fxml"));
-        Parent root = fxmlLoader.load();
-
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-
-        stage.initModality(Modality.WINDOW_MODAL);
-
-        stage.initOwner(this.nbTableView.getScene().getWindow());
-        stage.setTitle("Add");
-
-        stage.setResizable(false);
-        stage.showAndWait();
+        createModalStage("WarningEmpty", fxmlLoader);
         updateTableView();
     }
 
     @FXML
     public void btnActionChange(ActionEvent event) throws IOException {
-        if(nbTableView.getSelectionModel().isEmpty()){
-            createWarningEmpty();
+        FXMLLoader fxmlLoader = new FXMLLoader(NotebookApplication.class.getResource("viewChange.fxml"));
+        if (nbTableView.getSelectionModel().isEmpty()) {
+            createModalStage("WarningEmpty", new FXMLLoader(NotebookApplication.class.getResource("warningEmpty.fxml")));
             return;
         }
 
+        TableView.TableViewSelectionModel<Person> selectionModel = nbTableView.getSelectionModel();
+        Person person = selectionModel.getSelectedItem();
 
+        System.out.println(person.getId());
 
+        createModalStage("Change", fxmlLoader);
+
+        children = fxmlLoader.getController();
+        children.setParent(this);
+        String name = children.getTextFieldChangeName().getText();
+        String number = children.getTextFieldChangeNumber().getText();
+        String note = children.getTextFieldChangeNote().getText();
+
+        if (!name.isEmpty())
+            person.setName(name);
+
+        if (!number.isEmpty())
+            person.setNumber(number);
+
+        if (!note.isEmpty())
+            person.setNote(note);
+
+        try {
+            NotebookHandler notebookHandler = NotebookHandler.getInstance();
+            notebookHandler.changePerson(person);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        updateTableView();
 
     }
 
     @FXML
     public void btnActionDelete(ActionEvent event) throws IOException {
-        if(nbTableView.getSelectionModel().isEmpty()){
-            createWarningEmpty();
+        FXMLLoader fxmlLoader = new FXMLLoader(NotebookApplication.class.getResource("warningEmpty.fxml"));
+        if (nbTableView.getSelectionModel().isEmpty()) {
+            createModalStage("WarningEmpty", fxmlLoader);
             return;
         }
 
@@ -136,8 +139,7 @@ public class NotebookController implements Initializable {
 
     }
 
-    private void createWarningEmpty() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(NotebookApplication.class.getResource("warningEmpty.fxml"));
+    private void createModalStage(String title, FXMLLoader fxmlLoader) throws IOException {
         Parent root = fxmlLoader.load();
 
         Stage stage = new Stage();
@@ -146,7 +148,7 @@ public class NotebookController implements Initializable {
         stage.initModality(Modality.WINDOW_MODAL);
 
         stage.initOwner(this.nbTableView.getScene().getWindow());
-        stage.setTitle("empty");
+        stage.setTitle(title);
 
         stage.setResizable(false);
         stage.showAndWait();
@@ -161,10 +163,5 @@ public class NotebookController implements Initializable {
         updateTableView();
     }
 
-@FXML
-    public void btnActionChangeOk(ActionEvent event) {
-    }
-@FXML
-    public void btnActionChangeChanel(ActionEvent event) {
-    }
+
 }

@@ -4,38 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaf22a87-aa05-47c0-a557-13e63a977ab3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/NotebookApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/MyEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/WarningEmptyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/WarningWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/interfaces/INotebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/PersonList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/db/NotebookHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/todolistjavafx/viewChange.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/todolistjavafx/viewEdit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/todolistjavafx/viewMain.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/todolistjavafx/warningEmpty.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/todolistjavafx/warningWindow.fxml" afterDir="false" />
+    <list default="true" id="aaf22a87-aa05-47c0-a557-13e63a977ab3" name="Changes" comment="version 0.1.0(govno ebanoe)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook.db" beforeDir="false" afterPath="$PROJECT_DIR$/notebook.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/ChangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/ChangeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/db/NotebookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/db/NotebookHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,23 +111,37 @@
       <workItem from="1708027435415" duration="421000" />
       <workItem from="1708028245211" duration="692000" />
       <workItem from="1708087232522" duration="14748000" />
-      <workItem from="1708115664973" duration="2162000" />
+      <workItem from="1708115664973" duration="3671000" />
+      <workItem from="1708170366540" duration="9135000" />
     </task>
+    <task id="LOCAL-00001" summary="version 0.1.0(govno ebanoe)">
+      <option name="closed" value="true" />
+      <created>1708118633214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708118633214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 0.1.0(govno ebanoe)" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.1.0(govno ebanoe)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

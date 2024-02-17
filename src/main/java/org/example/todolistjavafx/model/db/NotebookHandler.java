@@ -75,6 +75,19 @@ public class NotebookHandler {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
 
+    public void changePerson(Person person){
+        try (PreparedStatement statement = this.connection
+                .prepareStatement("UPDATE person SET name = ?, number = ?, note = ? WHERE id = ?")) {
+
+            statement.setObject(1, person.getName());
+            statement.setObject(2, person.getNumber());
+            statement.setObject(3, person.getNote());
+            statement.setObject(4, person.getId());
+            statement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

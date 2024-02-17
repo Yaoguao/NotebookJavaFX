@@ -13,5 +13,6 @@
       <Label layoutX="149.0" layoutY="91.0" text="Номер" />
       <Label layoutX="116.0" layoutY="144.0" text="Примечание" />
       <TextArea fx:id="textFieldChangeNote" layoutX="204.0" layoutY="135.0" prefHeight="58.0" prefWidth="369.0" />
+      <Label layoutX="14.0" layoutY="225.0" prefHeight="58.0" prefWidth="412.0" text="Если вы не хотите изменять какие-то значения, то оставте их пустыми" />
    </children>
 </AnchorPane>
