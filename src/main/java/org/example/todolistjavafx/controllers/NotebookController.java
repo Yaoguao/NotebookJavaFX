@@ -26,31 +26,31 @@ import java.util.ResourceBundle;
 public class NotebookController implements Initializable {
 
     @FXML
-    Button buttonAdd;
+    private Button buttonAdd;
 
     @FXML
-    Button buttonChange;
+    private Button buttonChange;
 
     @FXML
-    Button buttonDelete;
+    private Button buttonDelete;
 
     @FXML
-    TableColumn tblColumnName;
+    private TableColumn tblColumnName;
 
     @FXML
-    TableColumn tblColumnNumber;
+    private TableColumn tblColumnNumber;
 
     @FXML
-    TableColumn tblColumnNote;
+    private TableColumn tblColumnNote;
 
     @FXML
-    TableView nbTableView;
+    private TableView nbTableView;
 
     @FXML
-    Label labelCount;
+    private Label labelCount;
 
     @Getter
-    ChangeController children;
+    private ChangeController children;
 
     @FXML
     private void btnActionAdd(ActionEvent event) throws IOException {

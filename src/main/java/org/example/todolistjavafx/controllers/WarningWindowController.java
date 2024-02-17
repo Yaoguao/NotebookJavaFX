@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class WarningWindowController {
 
     @FXML
-    Button buttonQuit;
+    private Button buttonQuit;
     @FXML
     private void btnActionQuit(){
         Stage stage = (Stage) buttonQuit.getScene().getWindow();

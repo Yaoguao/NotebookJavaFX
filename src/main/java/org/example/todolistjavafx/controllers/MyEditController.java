@@ -21,19 +21,19 @@ import java.sql.SQLException;
 public class MyEditController {
 
     @FXML
-    Button buttonOk;
+    private Button buttonOk;
 
     @FXML
-    Button buttonChanel;
+    private Button buttonChanel;
 
     @FXML
-    TextField fieldEditName;
+    private TextField fieldEditName;
 
     @FXML
-    TextField fieldEditNumber;
+    private TextField fieldEditNumber;
 
     @FXML
-    TextField fieldEditNote;
+    private TextField fieldEditNote;
 
     @FXML
     private void btnActionOk(ActionEvent event) throws IOException {
