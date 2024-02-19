@@ -55,7 +55,7 @@ public class NotebookController implements Initializable {
     @FXML
     private void btnActionAdd(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NotebookApplication.class.getResource("viewEdit.fxml"));
-        createModalStage("WarningEmpty", fxmlLoader);
+        createModalStage("add", fxmlLoader);
         updateTableView();
     }
 

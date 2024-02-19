@@ -7,9 +7,7 @@
     <list default="true" id="aaf22a87-aa05-47c0-a557-13e63a977ab3" name="Changes" comment="version 0.1.0(govno ebanoe)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook.db" beforeDir="false" afterPath="$PROJECT_DIR$/notebook.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/ChangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/ChangeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/controllers/NotebookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/db/NotebookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todolistjavafx/model/db/NotebookHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,36 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.NotebookApplication.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "Maven.toDoListJavaFX [package].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/DintoC/IdeaProject/toDoListJavaFX/src/main/java/org/example/todolistjavafx",
-    "last_opened_file_path": "C:/DintoC/IdeaProject/javaSkill",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotebookApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.toDoListJavaFX [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/DintoC/IdeaProject/toDoListJavaFX/src/main/java/org/example/todolistjavafx&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/DintoC/IdeaProject/javaSkill&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo",
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;,
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.todolistjavafx" />
@@ -112,7 +110,11 @@
       <workItem from="1708028245211" duration="692000" />
       <workItem from="1708087232522" duration="14748000" />
       <workItem from="1708115664973" duration="3671000" />
-      <workItem from="1708170366540" duration="9135000" />
+      <workItem from="1708170366540" duration="10071000" />
+      <workItem from="1708321722767" duration="3542000" />
+      <workItem from="1708331862975" duration="20000" />
+      <workItem from="1708347643171" duration="3000" />
+      <workItem from="1708347698331" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.1.0(govno ebanoe)">
       <option name="closed" value="true" />
@@ -122,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708118633214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 0.1.0(govno ebanoe)">
+      <option name="closed" value="true" />
+      <created>1708189797825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708189797825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="version 0.1.0(govno ebanoe)">
+      <option name="closed" value="true" />
+      <created>1708189878776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708189878776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
