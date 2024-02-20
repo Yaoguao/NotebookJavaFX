@@ -1,1 +1,1 @@
-Leanr project Notebook. 
+Learn project Notebook. 
